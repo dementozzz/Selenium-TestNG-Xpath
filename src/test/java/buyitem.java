@@ -81,6 +81,7 @@ public class buyitem {
             
           totalPriceItems = new BigDecimal("0");
 
+          //The code below is purposely to get all items added to my cart, along with their individual price and then sum it all to reveal the total items price.
           //Get the elements for every items in my cart
           cartItemPrice = driver.findElements(By.xpath("//div[@class='cart_item']//child::div[@class='inventory_item_price']"));
           cartItemName = driver.findElements(By.xpath("//div[@class='cart_item']//child::div[@class='inventory_item_name']"));
@@ -101,6 +102,7 @@ public class buyitem {
           }
 
           System.out.println("Total Item Price = " + totalPriceItems);
+          //------------------------------------------------------------------------------------------------------------------------------------------------------
 
           //Navigate to Checkout: Information page
           driver.findElement(By.xpath("//div[@class='cart_footer']//child::button[2]")).click();
