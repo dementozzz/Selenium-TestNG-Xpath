@@ -17,7 +17,7 @@ Simply click on green checkmark/play icon on the left.
 Or, you can run the command on the "TERMINAL" using the command below.
 
 ```
-mvn test -Dtest=”{YourTestClassName]”
+mvn test -Dtest=”{YourTestClassName}”
 ```
 
 
